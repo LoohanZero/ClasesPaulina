@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: arial;
+}
+
+.parent {
+    margin-bottom: 30px;
+    background: #49b293;
+    height: auto;
+}
+.child {
+    margin-bottom: 50px;
+    background: blue;
+    height: 100px;
+    width: 200px;
+}
+
+.div {
+    background-color: red;
+}

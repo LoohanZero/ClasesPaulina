@@ -1,0 +1,180 @@
+<!-- 
+    ./ -> va al fichero o carpeta hermanos del fichero en el cual estamos paradas
+    ../ -> va a la carpeta anterior a la que estamos paradas
+
+    PascalCase -> comienza con mayúscula y cada palabra nueva comienza con mayúscula
+    camelCase -> comienza con minúscula y cada palabra nueva comienza con mayúscula
+    kebab-case -> siempre con minúscula y separo nuevas palabras con un guión (--)
+    snake_case -> separo nuevas palabras con un guión bajo
+    SNAKE_CASE -> muy normal en javascript para constantes global
+
+    <ol> -> ordered list -> Lista ordenada (viene numerada) // Contenedores de li
+    <ul> -> unordered list -> no viene numerada // Contenedores de li 
+    <li> -> List Item -> items internos de la list // Hijos de ul/ol
+
+    HERENCIA -> padre tiene estilo e hijos lo heredan. No pasa con todas las propiedades, solo con algunas. Ej: color, font, font-size (todo lo de las fuentes)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Medium - Noticias</title>
+    </head>
+    <body>
+        <header id="header">
+            <span>Logo</span>
+            <span><a href="./profile/">Perfil</a></span>
+            <hr />
+            <h1>Medium</h1>
+        </header>
+        <div id="network">
+            <h3>Nuevo desde tu red</h3>
+            <a href="./network/">MÁS</a>
+
+            <!-- COMIENZO DE LISTA DESORDENADA -->
+
+            <ul>
+                <li>
+                    <h4>
+                        <a href="noticia-1">Suspendisse tellus ante, accumsan ac maximus eget, convallis non diam.</a>
+                    </h4>
+                    <p>
+                        In mattis nisl a fringilla congue. Duis a finibus neque. Aenean pretium ultrices eros ac luctus. Sed eget sapien efficitur, bibendum nisl id, dapibus ipsum. Mauris magna augue, scelerisque a turpis eget, mollis varius elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere, est at scelerisque mattis, justo velit pulvinar massa, eget consequat turpis purus sed est. Duis eget nisl lacinia, bibendum elit sit amet, semper ipsum. Proin iaculis augue sit amet mi sodales, eu posuere leo eleifend. Quisque ut elit lobortis, facilisis risus sit amet, commodo felis. Suspendisse porttitor interdum nulla ut vehicula. Integer molestie maximus orci vitae varius. Mauris ac malesuada lacus. Proin eu est ut odio vestibulum hendrerit.
+                    </p>
+                    <p>
+                        <span>09-Oct</span>
+                        <span> - </span>
+                        <span>tiempo de lectura</span>
+                    </p>
+                </li>
+
+                <li>
+                    <h4>
+                        <a href="noticia-2">Suspendisse tellus ante, accumsan ac maximus eget, convallis non diam.</a>
+                    </h4>
+                    <p>
+                        In mattis nisl a fringilla congue. Duis a finibus neque. Aenean pretium ultrices eros ac luctus. Sed eget sapien efficitur, bibendum nisl id, dapibus ipsum. Mauris magna augue, scelerisque a turpis eget, mollis varius elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere, est at scelerisque mattis, justo velit pulvinar massa, eget consequat turpis purus sed est. Duis eget nisl lacinia, bibendum elit sit amet, semper ipsum. Proin iaculis augue sit amet mi sodales, eu posuere leo eleifend. Quisque ut elit lobortis, facilisis risus sit amet, commodo felis. Suspendisse porttitor interdum nulla ut vehicula. Integer molestie maximus orci vitae varius. Mauris ac malesuada lacus. Proin eu est ut odio vestibulum hendrerit.
+                    </p>
+                    <p>
+                        <span>09-Oct</span>
+                        <span> - </span>
+                        <span>tiempo de lectura</span>
+                    </p>
+                </li>
+
+                <li>
+                    <h4>
+                        <a href="noticia-3">Suspendisse tellus ante, accumsan ac maximus eget, convallis non diam.</a>
+                    </h4>
+                    <p>
+                        In mattis nisl a fringilla congue. Duis a finibus neque. Aenean pretium ultrices eros ac luctus. Sed eget sapien efficitur, bibendum nisl id, dapibus ipsum. Mauris magna augue, scelerisque a turpis eget, mollis varius elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere, est at scelerisque mattis, justo velit pulvinar massa, eget consequat turpis purus sed est. Duis eget nisl lacinia, bibendum elit sit amet, semper ipsum. Proin iaculis augue sit amet mi sodales, eu posuere leo eleifend. Quisque ut elit lobortis, facilisis risus sit amet, commodo felis. Suspendisse porttitor interdum nulla ut vehicula. Integer molestie maximus orci vitae varius. Mauris ac malesuada lacus. Proin eu est ut odio vestibulum hendrerit.
+                    </p>
+                    <p>
+                        <span>09-Oct</span>
+                        <span> - </span>
+                        <span>tiempo de lectura</span>
+                    </p>
+                </li>
+
+                <li>
+                    <h4>
+                        <a href="noticia-4">Suspendisse tellus ante, accumsan ac maximus eget, convallis non diam.</a>
+                    </h4>
+                    <p>
+                        In mattis nisl a fringilla congue. Duis a finibus neque. Aenean pretium ultrices eros ac luctus. Sed eget sapien efficitur, bibendum nisl id, dapibus ipsum. Mauris magna augue, scelerisque a turpis eget, mollis varius elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere, est at scelerisque mattis, justo velit pulvinar massa, eget consequat turpis purus sed est. Duis eget nisl lacinia, bibendum elit sit amet, semper ipsum. Proin iaculis augue sit amet mi sodales, eu posuere leo eleifend. Quisque ut elit lobortis, facilisis risus sit amet, commodo felis. Suspendisse porttitor interdum nulla ut vehicula. Integer molestie maximus orci vitae varius. Mauris ac malesuada lacus. Proin eu est ut odio vestibulum hendrerit.
+                    </p>
+                    <p>
+                        <span>09-Oct</span>
+                        <span> - </span>
+                        <span>tiempo de lectura</span>
+                    </p>
+                </li>
+
+                <li>
+                    <h4>
+                        <a href="noticia-5">Suspendisse tellus ante, accumsan ac maximus eget, convallis non diam.</a>
+                    </h4>
+                    <p>
+                        In mattis nisl a fringilla congue. Duis a finibus neque. Aenean pretium ultrices eros ac luctus. Sed eget sapien efficitur, bibendum nisl id, dapibus ipsum. Mauris magna augue, scelerisque a turpis eget, mollis varius elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere, est at scelerisque mattis, justo velit pulvinar massa, eget consequat turpis purus sed est. Duis eget nisl lacinia, bibendum elit sit amet, semper ipsum. Proin iaculis augue sit amet mi sodales, eu posuere leo eleifend. Quisque ut elit lobortis, facilisis risus sit amet, commodo felis. Suspendisse porttitor interdum nulla ut vehicula. Integer molestie maximus orci vitae varius. Mauris ac malesuada lacus. Proin eu est ut odio vestibulum hendrerit.
+                    </p>
+                    <p>
+                        <span>09-Oct</span>
+                        <span> - </span>
+                        <span>tiempo de lectura</span>
+                    </p>
+                </li>
+
+                <li>
+                    <h4>
+                        <a href="noticia-6">Suspendisse tellus ante, accumsan ac maximus eget, convallis non diam.</a>
+                    </h4>
+                    <p>
+                        In mattis nisl a fringilla congue. Duis a finibus neque. Aenean pretium ultrices eros ac luctus. Sed eget sapien efficitur, bibendum nisl id, dapibus ipsum. Mauris magna augue, scelerisque a turpis eget, mollis varius elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere, est at scelerisque mattis, justo velit pulvinar massa, eget consequat turpis purus sed est. Duis eget nisl lacinia, bibendum elit sit amet, semper ipsum. Proin iaculis augue sit amet mi sodales, eu posuere leo eleifend. Quisque ut elit lobortis, facilisis risus sit amet, commodo felis. Suspendisse porttitor interdum nulla ut vehicula. Integer molestie maximus orci vitae varius. Mauris ac malesuada lacus. Proin eu est ut odio vestibulum hendrerit.
+                    </p>
+                    <p>
+                        <span>09-Oct</span>
+                        <span> - </span>
+                        <span>tiempo de lectura</span>
+                    </p>
+                </li>
+            </ol>
+
+            <!-- FINALIZACION DE LISTA DESORDENADA -->
+            <h2>Tu edición matutina</h2>
+            <hr />
+
+            <div id="javascript">
+                <h3>Javascript</h3>
+                <span>SUGERIDO</span>
+                <hr />
+                <div>
+                    <p>%SU_NOMBRE% and %CANTIDAD_DE_USUARIOS% others</p>
+                    <h4>Suspendisse tellus ante, accumsan ac maximus eget, convallis non diam.</h4>
+                    <p><b>Autor</b></p>
+                    <p>
+                        <span>09-Oct</span>
+                        <span> - </span>
+                        <span>tiempo de lectura</span>
+                    </p>
+                </div>
+
+                <div>
+                    <p>%SU_NOMBRE% and %CANTIDAD_DE_USUARIOS% others</p>
+                    <h4>Suspendisse tellus ante, accumsan ac maximus eget, convallis non diam.</h4>
+                    <p><b>Autor</b></p>
+                    <p>
+                        <span>09-Oct</span>
+                        <span> - </span>
+                        <span>tiempo de lectura</span>
+                    </p>
+                </div>
+
+                <div>
+                    <p>%SU_NOMBRE% and %CANTIDAD_DE_USUARIOS% others</p>
+                    <h4>Suspendisse tellus ante, accumsan ac maximus eget, convallis non diam.</h4>
+                    <p><b>Autor</b></p>
+                    <p>
+                        <span>09-Oct</span>
+                        <span> - </span>
+                        <span>tiempo de lectura</span>
+                    </p>
+                </div>
+
+                <div>
+                    <p>%SU_NOMBRE% and %CANTIDAD_DE_USUARIOS% others</p>
+                    <h4>Suspendisse tellus ante, accumsan ac maximus eget, convallis non diam.</h4>
+                    <p><b>Autor</b></p>
+                    <p>
+                        <span>09-Oct</span>
+                        <span> - </span>
+                        <span>tiempo de lectura</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

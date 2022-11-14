@@ -1,0 +1,78 @@
+<!-- 
+   * -> Selector universal, representa a cada uno de los elementos.
+   vh -> unidad de medida para el viewheight, toma el total de la altura del dispositivo
+   vw -> unidad de medida para el viewWith toma el total del ancho del dispositivo
+   min-height -> altura mínima que debe ocupar un contenedor
+   max-height- > altura máxima que debe ocupar un contenedor
+   min-width -> ancho mínimo que debe ocupar un contenedor
+   max-width -> ancho máximo que debe ocupar un contenedor
+   background-image: url('RutaRelativaORutaAbsoluta'); -> para poner imágenes de fondo en los contenedores
+   background-repeat: -> informa si la imagen debe repetirse o no
+   background-size: -> informa cómo debe ajustarse al contenedor
+   box-shadow -> para poner sombras a lo que querramos. Sus valores son:
+   box-shadow: -3px 15px 21px -5px rgb(0, 0, 0, 0.48); -> horizontal, vertical, cuándo se difumina, cuánto radio ocupa
+
+   <img alt="" scr="RutaRelativaORutaAbsoluta"> -> atributos alt y src obligatorios
+   Se modifica su altura/ancho con css
+   object-fit: cover; -> elijo cómo quiero que se ajuste al contenedor
+   object-position: 50% 50%; -> por defecto. Puedo colocar la imagen como quiero
+   
+   border-radius -> hace un redondeado de los bordes, si le pongo el 50% me hace completamente circular el componente.
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Clase 04</title>
+</head>
+<body>
+    <header class="halloween-header">
+    <h1 class="title">Clase 04</h1>
+    </header>
+
+    <h2 class="subtitle">Texto</h2>
+
+    <div class="box-1">Esta caja tiene<span>margin-bottom:40px;</span>
+    </div>
+    
+    <div class="box-2">Esta caja tiene <span>margin-top:40px;</span></div>
+
+    <div class="box-3"></div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tellus quam, in blandit massa tristique in. Etiam id erat eget purus volutpat fermentum sit amet vel sem. Morbi dictum hendrerit iaculis. Vivamus feugiat blandit turpis et tristique. Ut vel nisi non est ultrices tincidunt sit amet eu nisi. Mauris nisl lorem, imperdiet vel pretium et, scelerisque a nunc. Pellentesque vestibulum, quam ac maximus volutpat, est neque venenatis sapien, et pharetra lacus quam at ex. Ut fermentum magna in ex facilisis, id tempus lorem sagittis. Vivamus ipsum velit, accumsan vel mollis ornare, luctus non metus. Aenean dictum augue mauris, tempor gravida odio venenatis sed. Nam non bibendum nisi, in pharetra augue. Suspendisse ornare, quam nec maximus efficitur, eros lectus gravida arcu, ac varius neque velit sed purus. Phasellus viverra, arcu sed faucibus aliquet, libero sem vehicula urna, efficitur pellentesque ex metus quis massa.</p>
+    <p class="short-text">Sed facilisis, diam eget sollicitudin pulvinar, justo mauris euismod metus, at interdum augue nibh ut justo. Phasellus ac pretium erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ex urna, fringilla eu dapibus eget, iaculis at justo. Duis id ipsum vitae justo ultricies rutrum. Sed nibh risus, vulputate et aliquam id, sollicitudin id metus. Proin congue auctor ipsum. Donec sit amet mollis est. Donec elit augue, gravida a ligula eu, consectetur convallis lacus. Quisque tempus malesuada quam sit amet fermentum. In orci arcu, pretium non ultricies eget, euismod id ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis efficitur augue, in lobortis est. Nam in lobortis quam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tellus quam, in blandit massa tristique in. Etiam id erat eget purus volutpat fermentum sit amet vel sem. Morbi dictum hendrerit iaculis. Vivamus feugiat blandit turpis et tristique. Ut vel nisi non est ultrices tincidunt sit amet eu nisi. Mauris nisl lorem, imperdiet vel pretium et, scelerisque a nunc. Pellentesque vestibulum, quam ac maximus volutpat, est neque venenatis sapien, et pharetra lacus quam at ex. Ut fermentum magna in ex facilisis, id tempus lorem sagittis. Vivamus ipsum velit, accumsan vel mollis ornare, luctus non metus. Aenean dictum augue mauris, tempor gravida odio venenatis sed. Nam non bibendum nisi, in pharetra augue. Suspendisse ornare, quam nec maximus efficitur, eros lectus gravida arcu, ac varius neque velit sed purus. Phasellus viverra, arcu sed faucibus aliquet, libero sem vehicula urna, efficitur pellentesque ex metus quis massa.</p>
+    <p>Sed facilisis, diam eget sollicitudin pulvinar, justo mauris euismod metus, at interdum augue nibh ut justo. Phasellus ac pretium erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ex urna, fringilla eu dapibus eget, iaculis at justo. Duis id ipsum vitae justo ultricies rutrum. Sed nibh risus, vulputate et aliquam id, sollicitudin id metus. Proin congue auctor ipsum. Donec sit amet mollis est. Donec elit augue, gravida a ligula eu, consectetur convallis lacus. Quisque tempus malesuada quam sit amet fermentum. In orci arcu, pretium non ultricies eget, euismod id ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis efficitur augue, in lobortis est. Nam in lobortis quam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tellus quam, in blandit massa tristique in. Etiam id erat eget purus volutpat fermentum sit amet vel sem. Morbi dictum hendrerit iaculis. Vivamus feugiat blandit turpis et tristique. Ut vel nisi non est ultrices tincidunt sit amet eu nisi. Mauris nisl lorem, imperdiet vel pretium et, scelerisque a nunc. Pellentesque vestibulum, quam ac maximus volutpat, est neque venenatis sapien, et pharetra lacus quam at ex. Ut fermentum magna in ex facilisis, id tempus lorem sagittis. Vivamus ipsum velit, accumsan vel mollis ornare, luctus non metus. Aenean dictum augue mauris, tempor gravida odio venenatis sed. Nam non bibendum nisi, in pharetra augue. Suspendisse ornare, quam nec maximus efficitur, eros lectus gravida arcu, ac varius neque velit sed purus. Phasellus viverra, arcu sed faucibus aliquet, libero sem vehicula urna, efficitur pellentesque ex metus quis massa.</p>
+    <p>Sed facilisis, diam eget sollicitudin pulvinar, justo mauris euismod metus, at interdum augue nibh ut justo. Phasellus ac pretium erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ex urna, fringilla eu dapibus eget, iaculis at justo. Duis id ipsum vitae justo ultricies rutrum. Sed nibh risus, vulputate et aliquam id, sollicitudin id metus. Proin congue auctor ipsum. Donec sit amet mollis est. Donec elit augue, gravida a ligula eu, consectetur convallis lacus. Quisque tempus malesuada quam sit amet fermentum. In orci arcu, pretium non ultricies eget, euismod id ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis efficitur augue, in lobortis est. Nam in lobortis quam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tellus quam, in blandit massa tristique in. Etiam id erat eget purus volutpat fermentum sit amet vel sem. Morbi dictum hendrerit iaculis. Vivamus feugiat blandit turpis et tristique. Ut vel nisi non est ultrices tincidunt sit amet eu nisi. Mauris nisl lorem, imperdiet vel pretium et, scelerisque a nunc. Pellentesque vestibulum, quam ac maximus volutpat, est neque venenatis sapien, et pharetra lacus quam at ex. Ut fermentum magna in ex facilisis, id tempus lorem sagittis. Vivamus ipsum velit, accumsan vel mollis ornare, luctus non metus. Aenean dictum augue mauris, tempor gravida odio venenatis sed. Nam non bibendum nisi, in pharetra augue. Suspendisse ornare, quam nec maximus efficitur, eros lectus gravida arcu, ac varius neque velit sed purus. Phasellus viverra, arcu sed faucibus aliquet, libero sem vehicula urna, efficitur pellentesque ex metus quis massa.</p>
+    <p>Sed facilisis, diam eget sollicitudin pulvinar, justo mauris euismod metus, at interdum augue nibh ut justo. Phasellus ac pretium erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ex urna, fringilla eu dapibus eget, iaculis at justo. Duis id ipsum vitae justo ultricies rutrum. Sed nibh risus, vulputate et aliquam id, sollicitudin id metus. Proin congue auctor ipsum. Donec sit amet mollis est. Donec elit augue, gravida a ligula eu, consectetur convallis lacus. Quisque tempus malesuada quam sit amet fermentum. In orci arcu, pretium non ultricies eget, euismod id ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis efficitur augue, in lobortis est. Nam in lobortis quam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tellus quam, in blandit massa tristique in. Etiam id erat eget purus volutpat fermentum sit amet vel sem. Morbi dictum hendrerit iaculis. Vivamus feugiat blandit turpis et tristique. Ut vel nisi non est ultrices tincidunt sit amet eu nisi. Mauris nisl lorem, imperdiet vel pretium et, scelerisque a nunc. Pellentesque vestibulum, quam ac maximus volutpat, est neque venenatis sapien, et pharetra lacus quam at ex. Ut fermentum magna in ex facilisis, id tempus lorem sagittis. Vivamus ipsum velit, accumsan vel mollis ornare, luctus non metus. Aenean dictum augue mauris, tempor gravida odio venenatis sed. Nam non bibendum nisi, in pharetra augue. Suspendisse ornare, quam nec maximus efficitur, eros lectus gravida arcu, ac varius neque velit sed purus. Phasellus viverra, arcu sed faucibus aliquet, libero sem vehicula urna, efficitur pellentesque ex metus quis massa.</p>
+    <p>Sed facilisis, diam eget sollicitudin pulvinar, justo mauris euismod metus, at interdum augue nibh ut justo. Phasellus ac pretium erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ex urna, fringilla eu dapibus eget, iaculis at justo. Duis id ipsum vitae justo ultricies rutrum. Sed nibh risus, vulputate et aliquam id, sollicitudin id metus. Proin congue auctor ipsum. Donec sit amet mollis est. Donec elit augue, gravida a ligula eu, consectetur convallis lacus. Quisque tempus malesuada quam sit amet fermentum. In orci arcu, pretium non ultricies eget, euismod id ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis efficitur augue, in lobortis est. Nam in lobortis quam.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut auctor tellus quam, in blandit massa tristique in. Etiam id erat eget purus volutpat fermentum sit amet vel sem. Morbi dictum hendrerit iaculis. Vivamus feugiat blandit turpis et tristique. Ut vel nisi non est ultrices tincidunt sit amet eu nisi. Mauris nisl lorem, imperdiet vel pretium et, scelerisque a nunc. Pellentesque vestibulum, quam ac maximus volutpat, est neque venenatis sapien, et pharetra lacus quam at ex. Ut fermentum magna in ex facilisis, id tempus lorem sagittis. Vivamus ipsum velit, accumsan vel mollis ornare, luctus non metus. Aenean dictum augue mauris, tempor gravida odio venenatis sed. Nam non bibendum nisi, in pharetra augue. Suspendisse ornare, quam nec maximus efficitur, eros lectus gravida arcu, ac varius neque velit sed purus. Phasellus viverra, arcu sed faucibus aliquet, libero sem vehicula urna, efficitur pellentesque ex metus quis massa.</p>
+    <p>Sed facilisis, diam eget sollicitudin pulvinar, justo mauris euismod metus, at interdum augue nibh ut justo. Phasellus ac pretium erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ex urna, fringilla eu dapibus eget, iaculis at justo. Duis id ipsum vitae justo ultricies rutrum. Sed nibh risus, vulputate et aliquam id, sollicitudin id metus. Proin congue auctor ipsum. Donec sit amet mollis est. Donec elit augue, gravida a ligula eu, consectetur convallis lacus. Quisque tempus malesuada quam sit amet fermentum. In orci arcu, pretium non ultricies eget, euismod id ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas quis efficitur augue, in lobortis est. Nam in lobortis quam.</p>
+    
+    <a href="">Soy un link</a>
+    <div class="red-circle">
+    </div>
+
+    <!-- <img 
+    class="halloween-image"
+    alt="Happy Halloween" 
+    src="https://cdn.stocksnap.io/img-thumbs/960w/carved-halloween_BYUZOL58JC.jpg" /> -->
+
+    <img 
+    class="second-halloween-image"
+    alt="Happy Halloween" 
+    src="./imgs/4221550.jpg" />
+</body>
+</html>

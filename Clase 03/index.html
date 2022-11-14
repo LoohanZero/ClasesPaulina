@@ -1,0 +1,86 @@
+<!-- 
+
+        # -> identifica al id en css // especifidad 100
+        . -> identifica a cualquier clase css // especifidad 10
+        tag -> identifica a cualquier etiqueta // especifidad 1
+
+
+        PRIORIDAD EN BASE AL ORIGEN
+        1º-> cualquier style que se ponga en línea en la etiqueta del html (nada lo supera)
+        2º -> cualquier style que esté en el head
+        3º -> cualquier style que esté en un fichero css importado
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link href="./styles.css" rel="stylesheet"/>
+        <title>Clase 02</title>
+    <!-- CSS EN HEAD -->
+    </head>
+    <body>
+        <header class="header-container">
+            <h1>Clase 02</h1>
+        </header>
+        <!-- AQUÍ COMIENZA MI ASIDE -->
+        <div id="aside-main-container" class="aside-main-container-class"> <!-- CSS EN LINEA -->
+            <aside class="display-en-linea">
+                <nav>
+                    <a class="enlace-nav" href="">Primer Link</a>
+                    <a class="enlace-nav" href="">Segundo Link</a>
+                    <a class="enlace-nav" href="">Tercer Link</a>
+                    <a class="enlace-nav" href="">Cuarto Link</a>
+                </nav>
+            </aside>
+                <!-- AQUÍ COMIENZA MI MAIN -->
+            <main class="display-en-linea">
+                    <section>
+                        <h2>Subtítulo</h2>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                    </section>
+
+                    <!-- AQUÍ COMIENZA MI SECCION 2 -->
+
+                    <section>
+                        <h2>Subtítulo</h2>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                    </section>
+
+                    <!-- AQUÍ COMIENZA MI SECCION 3 -->
+
+                    <section>
+                        <h2>Subtítulo</h2>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                    </section>
+            </main>
+        </div>
+    <!-- AQUÍ COMIENZA MI FOOTER -->
+        <a href="">Link</a>
+      <footer>
+        <nav> 
+            <a href="">Primer Link</a>
+            <a id="primer-link" class="footer-nav-link" href="">Segundo Link</a>
+            <a class="footer-nav-link" href="">Tercer Link</a>
+            <a class="footer-nav-link cuarto-link-azul" href="">Cuarto Link</a>
+            <a class="footer-nav-link quinto-link-important" href="">Quinto Link</a>
+
+        </nav>
+        <div>
+            <p>Copyright Paulina W.</p>
+        </div>
+      </footer>
+
+    </body>
+</html>

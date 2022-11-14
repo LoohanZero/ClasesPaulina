@@ -1,0 +1,54 @@
+HTML Notas:
+Hypertex Markup Language: 
+es un lenguaje de marcado, no de programación porque no cumple con las reglas de los lenguajes de programación.
+
+¿Qué significa marcar? los sitios web necesitan ser entendidos o interpretados no sólo por personas, por usuarios, sino también por computadoras, por máquinas, por software. Entonces, a la hora de generar una pieza que, para muchos de nosotros es una pieza gráfica visual, tenemos que pensar que pueda ser entendida por una máquina. Para que la entienda una máquina lo que hacemos es marcar de forma muy técnica las diferentes partes del contenido de una página web. 
+Las etiquetas son la parte del lenguaje del HTML que van marcando, va etiquetando diferentes partes y conceptos de la página. 
+----------------------
+
+<etiqueta>Contenido</etiqueta>
+Código mínimo que tiene que tener un archivo HTML
+El archivo HTML siempre comienza con la etiqueta HTML. 
+
+<!DOCTYPE html> --> define que vamos a usar html5 que tiene etiquetas más actualizadas
+<html> --> marca inicio y fin del documento
+	    <head> </head> --> info de la pagina (no se ve)
+	    <body> </body> --> contenido de la página (se ve)
+</html>
+
+<head>
+<meta charset= “utf-8”> --> encriptación de la página dependiendo del lenguaje de símbolos a leer
+</head>
+----------------------
+
+Indentación para dar legibilidad
+
+----------------------
+Todas las etiquetas abiertas tienen que ser cerradas.
+Etiquetas con auto cierre/sin auto cierre: diferencias.
+---------------------
+HTML semántico
+Ejemplos de etiquetas y sus significados:
+<header>
+<main>
+<footer>
+<section>
+<article>
+<aside>
+<nav>
+<ol>
+<ul>
+<li>
+<div>
+<h>
+<p>
+<span>
+<b>
+<strong> (y diferencias)
+<em> --> cursiva
+<img>
+<a>
+
+--------------
+Si llegamos: rutas relativas y absolutas en links
+

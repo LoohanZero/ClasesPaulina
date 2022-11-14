@@ -1,0 +1,108 @@
+<!-- 
+    <header> -> presentación de la página (suele contener el h1 y siempre está arriba)
+    <nav> -> contiene los links de navegación interna de la página (no links a lugares externos)
+    <main> -> Contiene la información de la página
+    <footer> -> al pie (agrupa elementos debajo de todo)
+    <section> -> secciones
+    <article> -> Se entiende sin contexto de la página, puede tener header, main y footer. // EJ, publicidad, artículos periodísticos. Usado mucho para cards
+    <aside> -> agrupa elementos laterales
+    <ol>
+    <ul>
+    <li>
+    <div> -> etiqueta contenedora de otras etiquetas / agrupar
+
+
+        ATRIBUTOS UNIVERSALES HTML (TODAS LAS ETIQUETAS)
+        id -> uno sólo por proyecto por etiqueta (casi no se usa)
+        class -> se pueden usar múltiples y se pueden repetir, se utiliza la repetición para setear estilos determinados
+        style -> estilo en línea aplicable sólo a esa etiqueta
+
+        --------------
+        CSS - Cascade stylesheet
+        
+        nombre-de-estilo: valor;
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./styles.css" rel="stylesheet"/>
+        <title>Clase 02</title>
+    <!-- CSS EN HEAD -->
+        <style>
+            #aside-main-container {
+                height: 900px;
+            }
+
+            .enlace-nav {
+                display:block;
+            }
+
+            aside {
+                width: 10%; 
+                float: left;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Clase 02</h1>
+        </header>
+        <!-- AQUÍ COMIENZA MI ASIDE -->
+        <div id="aside-main-container" style="height: 800px;"> <!-- CSS EN LINEA -->
+            <aside class="display-en-linea">
+                <nav>
+                    <a class="enlace-nav" href="">Primer Link</a>
+                    <a class="enlace-nav" href="">Segundo Link</a>
+                    <a class="enlace-nav" href="">Tercer Link</a>
+                    <a class="enlace-nav" href="">Cuarto Link</a>
+                </nav>
+            </aside>
+                <!-- AQUÍ COMIENZA MI MAIN -->
+            <main class="display-en-linea">
+                    <section>
+                        <h2>Subtítulo</h2>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                    </section>
+
+                    <!-- AQUÍ COMIENZA MI SECCION 2 -->
+
+                    <section>
+                        <h2>Subtítulo</h2>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                    </section>
+
+                    <!-- AQUÍ COMIENZA MI SECCION 3 -->
+
+                    <section>
+                        <h2>Subtítulo</h2>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                        <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
+                    </section>
+            </main>
+        </div>
+    <!-- AQUÍ COMIENZA MI FOOTER -->
+
+      <footer>
+        <nav>
+            <a href="">Primer Link</a>
+            <a href="">Segundo Link</a>
+            <a href="">Tercer Link</a>
+            <a href="">Cuarto Link</a>
+        </nav>
+
+        <p>Copyright Paulina W.</p>
+      </footer>
+
+    </body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* CSS EN FICHERO APARTE (RECOMENDADO) */
+
+.header-container  {
+    background-color: aquamarine;
+}
+
+#aside-main-container {
+    height: 700px;
+}
+
+aside {
+    width: 10%; 
+    float: left;
+}
+
+aside nav {
+    background-color: red;
+}
+
+.display-en-linea {
+    display: inline; 
+}
+
+.enlace-nav {
+    display:block;
+}
+
+main {
+    width: 90%; 
+    float: right;
+}
+/* ESPECIFICIDAD */
+
+/* ESPECIFICIDAD DE 1 porque tiene una etoqueta*/
+a {
+    color: black;
+}
+
+/* ESPECIFICIDAD DE 3 porque tiene 3 etiquetas anidadas*/
+footer nav a {
+    color: brown;
+}
+
+/* ESPECIFICIDAD DE 10 porque tiene 1 clase*/
+.footer-nav-link {
+    color: aqua;
+}
+
+/* ESPECIFICIDAD DE 20 porque tiene 2 clases hermanadas*/
+.footer-nav-link.cuarto-link-azul {
+    color: blue;
+}
+
+/* ESPECIFICIDAD DE 100 porque tiene 1 ID*/
+#primer-link {
+    color: pink;
+}
+
+/* ESPECIFICIDAD ABSOLUTA (SUPERA A TODOS) porque tiene el !important ---> MALA PRACTICA */
+.quinto-link-important {
+    color: red !important;
+}
+
+
+
+
+/* CUANDO LAS CLASES, TAGS O IDS SE REPITEN, CSS SIEMPRE ELIGE EL ÚLTIMO QUE APARECE */
+#aside-main-container {
+    height: 800px;
+}

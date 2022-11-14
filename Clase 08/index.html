@@ -1,0 +1,51 @@
+<!--
+    display: block -> Muestra el elemento empujando a sus hermanos hacia abajo (uno arriba del otro)
+    display: inline -> muestra elementos uno al lado del otro
+    display: inline-block -> muestra a los elementos ocupando el espacio que les decimos que ocupen (height/width) uno al lado del otro
+
+    Si a elementos en linea les pongo como display: block, entonces los hago columna (se ponen uno debajo del otro)
+    Si a elementos que ocupan un bloque entero, les pongo display: inline-block los muestro uno al lado del otro (CONTENEDORES)
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"/>
+    <title>Clase 08</title>
+</head>
+<body>
+        <div class="square-container">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+
+        <div class="square-container">
+            <div class="square small-square"></div>
+            <div class="square medium-square"></div>
+            <div class="square"></div>
+            <div class="square large-square"></div>
+        </div>
+
+        <p class="format-block">Texto 1</p>
+        <p class="format-block">Texto 2</p>
+        <p class="format-block">Texto 2</p>
+
+        <a class="format-inline">Link 1</a>
+        <a class="format-inline">Link 2</a>
+        <a class="format-inline">Link 3</a>
+        <span class="format-inline">Span 1</span>
+
+        <p class="centered-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec nibh sem. Nulla fermentum ut turpis eget rhoncus. Praesent sodales efficitur lorem quis hendrerit. Suspendisse consequat felis in eros interdum laoreet. Nulla placerat massa sit amet magna vehicula, non porttitor ex bibendum. Fusce dapibus feugiat elit. Cras ut ex purus. Integer egestas commodo nulla. Phasellus accumsan commodo nisl, vestibulum feugiat felis. Quisque quam quam, ultricies at tincidunt vitae, facilisis sit amet ipsum. Nullam quis est luctus, posuere libero et, mollis dolor. Phasellus metus leo, vehicula ut faucibus at, mattis at purus. Nunc vestibulum diam odio, ut interdum magna iaculis bibendum.</p>
+
+        <div class="inline-text-container">
+            <img class="inline-text image-align" alt="image" src="https://cdn.stocksnap.io/img-thumbs/960w/leaves-fall_AYSDMFNZAD.jpg"/>
+            <p class="inline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec nibh sem. Nulla fermentum ut turpis eget rhoncus. Praesent sodales efficitur lorem quis hendrerit. Suspendisse consequat felis in eros interdum laoreet. Nulla placerat massa sit amet magna vehicula, non porttitor ex bibendum. Fusce dapibus feugiat elit. Cras ut ex purus. Integer egestas commodo nulla. Phasellus accumsan commodo nisl, vestibulum feugiat felis. Quisque quam quam, ultricies at tincidunt vitae, facilisis sit amet ipsum. Nullam quis est luctus, posuere libero et, mollis dolor. Phasellus metus leo, vehicula ut faucibus at, mattis at purus. Nunc vestibulum diam odio, ut interdum magna iaculis bibendum.</p>
+        </div>
+</body>
+</html>

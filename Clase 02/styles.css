@@ -1,0 +1,10 @@
+/* CSS EN FICHERO APARTE (RECOMENDADO) */
+
+.display-en-linea {
+    display: inline; 
+}
+
+main {
+    width: 90%; 
+    float: right;
+}
