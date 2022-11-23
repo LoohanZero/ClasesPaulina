@@ -1,0 +1,91 @@
+/* PROPIEDADES FLEXBOX
+
+LOS ESTILOS FLEXBOX VAN SIEMPRE EN EL PADRE
+SIEMPRE PONER: 
+display: flex; 
+Por defecto row en flex-direction, flex-start en justify-content y align-items 
+
+Es decir:
+flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+
+
+SIN ESTO, NO SE ACTIVAN LAS PROPIEDADES FLEX
+Por defecto se ponen en línea, arriba y a la izquierda
+
+justify-content --> alinear dentro de la linea horizontal (eje de las X)
+align-items --> alinear dentro de la linea vertical (eje de las Y)
+pueden ser: center, flex-start, flex-end
+
+center -> centra a nivel vertical u horizontal
+flex-start -> lleva el elemento al principio (arriba o a la izquierda del contenedor padre dependiendo de si es justify-content o aling-items)
+flex-end -> lleva el elemento al final (abajo o a la derecha del contenedor padre dependiendo de si es justify-content o aling-items)
+space-around -> pone alrededor de cada elemento el mismo espacio, quedando entr eellos el doble de espacio que en los laterales
+space-evenly -> pone exactamente la misma cantidad de espacio entre ellos que con respecto al borde
+space-between -> poner los elemntos de los costados, los pone contra el borde y el resto los acomoda evenly
+
+
+flex-direction: row/column/row-reverse/column-reverse
+
+cuando la flex-direction está en column, el justify-content pasa a manejar el eje de las Y, y el align-items pasa a manejar el eje de las X
+
+flex-wrap: nowrap; -> POR DEFECTO
+flex-wrap: wrap/wrap-reverse -> Deja que el elemento pase a la siguiente línea si se pasa del ancho
+align-content: flex-end; --> solo funciona con flex-wrap y alinea el contenido para donde queramos
+
+EN LOS HIJOS:
+align-self: flex-start/center/flex-end -> caracteristica que se pone en el hijo pero el padre tiene que ser flex (saca al hijo del orden que da el padre)
+order: numeros;  -> tienen 0 por defecto y si son iguales se ordenan por orden de html pero luego mayor el numero, mas atras en el orden
+flex-grow: numeros -> se dividen entre sí el espacio libre. Por defecto es 0 y se lo dividen equitativamente
+flex-shrink: numeros ->  mayor número, mayor prioridad para achicarse
+
+----------------------
+MAS IMPORTANTES:
+
+display: flex;
+flex-direction: row/column;
+justify-content: center/flex-end/flex-start/space-between/space-evenly/space-around;
+align-items: center/flex-end/flex-start/space-between/space-evenly/space-around;
+flex-wrap: wrap;
+
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.flexbox {
+    display: flex;
+    height: 500px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 100px;
+    width: 500px;
+    font-size: 30px;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 {
+    background-color: aquamarine;
+}
+
+.box-2 {
+    background-color: blueviolet;
+}
+
+.box-3 {
+    background-color: cornflowerblue;
+}
+
+.box-4 {
+    background-color:darkblue;
+}
