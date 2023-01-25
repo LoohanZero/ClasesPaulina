@@ -6,7 +6,7 @@ body {
 /* CSS EN FICHERO APARTE (RECOMENDADO) */
 
 .header-container  {
-    background-color: aquamarine;
+    background-color: aquamarine !important; /* !important casi no se usa */
 }
 
 #aside-main-container {

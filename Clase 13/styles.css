@@ -1,0 +1,72 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+@font-face {
+
+}
+
+body {
+    font-size: 20px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+/* div {
+    height: 100px; 
+    width: 100px;
+} */
+
+div.square {
+    background-color: aquamarine;
+}
+
+.square {
+    background-color: blue;
+}
+
+.square.other-bg {
+    background-color: blueviolet;
+}
+
+.list-style {
+    font-size: 15px;
+}
+/* #more-square {
+    background-color: black;
+} */
+
+.big-square {
+    height: 200px; 
+    width: 200px;
+    background-color: black;
+}
+
+.medium-square {
+    height: 150px; 
+    width: 150px;
+    background-color: aqua;
+}
+
+.image-container {
+    box-shadow: 10px 10px 38px -8px rgb(0, 0, 0 , 0.75);
+    width: 500px;
+    height: 500px;
+    border-radius: 106px;
+    overflow: hidden;
+}
+
+.image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: 67% 50%;
+    object-fit: cover;
+}
+.large-text {
+    width: 102vw;
+}
+
+.parent-div {
+    background-color: transparent;
+}

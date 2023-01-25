@@ -4,11 +4,31 @@
         . -> identifica a cualquier clase css // especifidad 10
         tag -> identifica a cualquier etiqueta // especifidad 1
 
+        PRIORITY BASED IN ORIGIN 
+        1ª -> Any style anywhere with an !important in it (not recommend it, nothing overrides it) -> AVOID
+        2º -> Any inline style in the html tag (only !important overrides it) -> AVOID
+        3º -> Any style in the head in a <style> tag -> AVOID
+        4º -> Any style in an external css file -> RECOMMENDED
 
-        PRIORIDAD EN BASE AL ORIGEN
-        1º-> cualquier style que se ponga en línea en la etiqueta del html (nada lo supera)
-        2º -> cualquier style que esté en el head
-        3º -> cualquier style que esté en un fichero css importado
+        PRIORITY BASED ON IMPORTANCE (SPECIFICITY)
+
+        # -> identifies any id in css // specificity 100
+        . -> identifies any class in css // specificity 10
+        tag -> identifies tags in css // specificity 1
+
+        PRIORITY BASED ON LINE BY LINE ORDER
+        #header .title {
+            color:chartreuse;
+        }
+
+        #header .title {
+            color:crimson;
+        }
+
+        If you have repeated code, the browser will choose the one its written last so this title will be crimson
+
+
+
 -->
 
 <!DOCTYPE html>
@@ -23,6 +43,11 @@
         <link href="./styles.css" rel="stylesheet"/>
         <title>Clase 02</title>
     <!-- CSS EN HEAD -->
+    <style>
+        h2 {
+            font-weight: 200;
+        }
+    </style>
     </head>
     <body>
         <header class="header-container">
@@ -41,7 +66,7 @@
                 <!-- AQUÍ COMIENZA MI MAIN -->
             <main class="display-en-linea">
                     <section>
-                        <h2>Subtítulo</h2>
+                        <h2 style="font-weight: normal;">Subtítulo</h2>
                         <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
                         <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>
                         <p>Etiam condimentum, enim vel euismod faucibus, ante mauris malesuada erat, cursus bibendum urna mauris in odio. Aenean in nisl congue, finibus ante quis, semper libero. Quisque tincidunt massa a tortor euismod bibendum. Proin consequat, quam eu venenatis pretium, nunc velit sodales tortor, eu aliquam mauris ipsum nec lectus. Nam ut porttitor augue. Nulla suscipit vitae justo pellentesque ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac magna ac justo tempus sollicitudin vitae eu ante.</p>

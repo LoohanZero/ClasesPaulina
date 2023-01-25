@@ -1,0 +1,26 @@
+body {
+    background-color: grey;
+}
+
+.container  {
+    	height: 100px;
+        width: 200px;
+        margin: 20px auto;
+}
+
+.opacity {
+    background-color: darkblue;
+    opacity: 0.6;
+}
+
+.background-opacity {
+    background-color: rgba(0, 0, 139, 0.6);
+}
+
+.font-em {
+   font-size: 1em;
+}
+
+.font-rem {
+    font-size: 1rem;
+}
